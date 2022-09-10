@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("templates/head") %>
+    <body>
+        <%- include("templates/navbar") %>  
+        <form action="/getWeather" method="GET">
+        <div class="input">
+                <input type="text" id="country" name="country" placeholder="Location">
+                <button type="submit" id="submitButton">Search</button>
+                
+        </div>
+        <div class="options">
+            <span id="label">Choose Unit: </span>
+            <label for="standard" class="option">Standard</label>
+            <input type="radio" id="standard" name="unit" value="standard">
+            <label for="metric" class="option">Metric</label>
+            <input type="radio" id="metric" name="unit" value="metric">
+            <label for="imperial" class="option">Imperial</label>
+            <input type="radio" id="imperial" name="unit" value="imperial">
+        </div>
+        </form>
+    </body>
+</html>
